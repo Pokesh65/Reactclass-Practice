@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sun"></div>
+    <style>
+        body{
+            background-color: antiquewhite;
+            animation-name: banime;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes banime {
+            20%{
+                background-color: rgba(177, 170, 160, 0.687);
+                
+
+            }
+            40%{
+                background-color: rgb(202, 184, 161);
+                
+
+            }
+            60%{
+                background-color: rgb(74, 49, 16);
+
+            }
+            80%{
+                background-color: rgb(32, 18, 7);
+
+            }
+            100%{
+                background-color: rgb(0, 0, 0);
+
+            }
+            
+        }
+        .sun{
+            width: 80px;
+            height: 80px;
+           
+            border-radius: 100px;
+            margin: 80px;
+            
+            margin-top: 300px;
+            animation-name: sunto;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes sunto {
+            20%{
+                transform: translate(200px,-80px);
+                border:5px dashed orangered;
+            background:radial-gradient(yellow,orange,red,yellow);
+                
+
+            }
+            40%{
+                transform: translate(460px,-140px);
+                border:5px dashed orangered;
+            background:radial-gradient(yellow,orange,red,yellow);
+
+            }
+            60%{
+                transform: translate(640px,-180px);
+                border:5px dashed rgb(235, 218, 212);
+            background:radial-gradient(yellow,orange,red,yellow);
+
+            }
+            80%{
+                transform: translate(800px,-220px);
+                border:5px dashed rgb(255, 255, 255);
+            background:radial-gradient(lo left white,whitesmoke,white,whitesmoke);
+
+            }
+            100%{
+                transform: translate(1000px,-275px);
+                border:5px dashed whitesmoke;
+            background:linear-gradient(white,whitesmoke,white,whitesmoke,white,white,whitesmoke,white,whitesmoke,white);
+
+            }
+            
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+}
+
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("./—Pngtree—shading\ background\ abstract\ colorful\ background_938007.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.box{
+    width: 400px;
+    height: 450px;
+    border: 2px solid #625d5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    /* background: transparent; */
+    background-image: url(../dom/star.gif);
+    color: transparent;
+    background-clip: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.box:hover{
+    filter: drop-shadow(5px 5px 40px black);
+}
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+} 
+input:focus ~label{
+    top: -5px;
+}
+input:focus ~label{
+    top: -5px;
+
+}
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #000;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+
+
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #e6e2e2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.forget{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 15px;
+    font-size: 0.9em;
+    color: #fff;
+}
+.forget label:nth-child(2){
+    order: 1;
+
+}
+.forget label{
+    display: flex;
+    align-items: center;
+}
+.forget label input[type="checkbox"]{
+    margin-right:6px ;
+
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+
+}
+.register{
+    font-size: 0.9em;
+    margin:20px 0 15px ;
+    color: #fff;
+
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.register p a:hover{
+    text-decoration: underline;
+  
+}

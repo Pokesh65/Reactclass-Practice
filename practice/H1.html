@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+        ::-webkit-scrollbar{
+            
+            width: 15px;
+            height: 15px;
+            
+        }
+        ::-webkit-scrollbar-track{
+            background:linear-gradient(to right,orangered,yellow);
+            /* background-image: url(../dom/1937530.jpg);
+            background-position: center;
+            background-size: auto;
+            background-repeat:repeat; */
+            border-radius: 1000px;
+            
+
+        }
+        ::-webkit-scrollbar-thumb{
+            
+            /* background-image: url(../dom/1937530.jpg); */
+            /* background:linear-gradient(to right,rgb(47, 214, 203)30%,rgb(18, 198, 39)100%); */
+            background-image: repeating-linear-gradient(to right bottom, red,orange,yellow,green,blue,indigo,violet);
+
+            border-radius: 1000px;
+
+        }
+        ::-webkit-scrollbar-button{
+            /* background: linear-gradient(to left, red,blue); */
+            background-image: radial-gradient(circle, rgb(152, 212, 1), rgb(0, 0, 0)30%, rgb(255, 255, 255));
+            
+            border-radius: 4px;
+            width: 60vw;
+            height: 4vh;
+
+        }
+        ::-webkit-scrollbar-corner{
+            background: purple;
+            display: none;
+        }
+        .container{
+            display: flex;
+        }
+        .d1{
+            width: 80px;
+            height: 80px;
+            background-color: blueviolet;
+            animation-name: box;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            box-shadow: -5px -5px 5px 5px orangered;
+           
+            
+            
+        }
+        .p2{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(2, 45, 45);
+            text-shadow: 1px 2px 8px rgb(20, 126, 133);
+            /* white-space:nowrap; */
+            line-height: 30px;
+            text-indent: 40px ;
+        }
+        .p1{
+            color: rgb(120, 178, 21);
+            font-family: 'monospace';
+            font-size: 20px;
+            animation-name: fontbox;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        .p2d{
+            height: 70vh;
+            /* width:20px; */
+            background:linear-gradient(to right, hsl(182, 25%, 50%)40%,rgb(108, 9, 237));
+            word-break: break-all; */
+            overflow-x:scroll;
+            overflow-y:scroll;
+
+
+        }
+        .div1{
+            width: 30vw;
+            height: 10vh;
+            background-color: darkgoldenrod;
+            border:2px solid black;
+            float: left;
+            border-radius:4px ;
+
+        }
+        .div2{
+            width: 30vw;
+            height: 10vh;
+            background-color: rgb(184, 88, 29);
+            border:2px solid black;
+            float: right;
+            border-radius:4px;
+
+        }
+        
+
+        @keyframes fontbox {
+            0%{
+                opacity: 0;
+
+            }
+            25%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+                color:white;
+                background-color: black;
+                border-radius: 4px;
+                text-shadow: 2px 2px 4px greenyellow;
+                
+            }
+            75%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+            
+        }
+        @keyframes box {
+            0%{
+                background-color: blueviolet;
+                border:2px solid rgb(0, 0, 0);
+                transform: translate(0px,0px);
+                border-radius: 40px;
+                box-shadow: -5px 5px 5px 5px orangered;
+                margin: 10px;
+
+            }
+            25%{
+                background-color: rgb(28, 0, 54);
+                border:2px solid rgb(255, 79, 202);
+                transform: translatex(540px);
+                box-shadow: -5px 5px 5px 5px orangered;
+                border-radius: 40px;
+                margin: 20px;
+                width: 40px;
+                height: 40px;
+            }
+            50%{
+                background-color: rgb(208, 167, 246);
+                border:2px solid rgb(174, 58, 174);
+                transform: translate(540px,540px);
+                box-shadow: -5px -5px 5px 5px orangered;
+                margin: 30px;
+                border-radius: 40px;
+                width: 80px;
+                 height: 80px;
+                
+
+            }
+            75%{
+                background-color: rgb(43, 128, 226);
+                border:2px solid rgb(146, 9, 161);
+                transform: translate(0px,540px);
+                box-shadow: 5px -5px 5px 5px orangered;
+                margin: 40px;
+                border-radius: 40px;
+                width: 40px;
+                height: 40px;
+
+            }
+            100%{
+                background-color: rgb(162, 167, 173);
+                border:2px solid rgb(20, 0, 23);
+                transform: translate(0px,0px);
+                box-shadow: 5px 5px 5px 5px orangered;
+                border-radius: 40px;
+                width: 80px;
+                 height: 80px;
+                 margin: 50px;
+                
+
+            }
+            
+        }
+        
+    </style>
+    <div class="container">
+        <div class="d1">
+        <p class="p1">Pokesh</p>
+        </div>
+        <div class="d1" style="margin:8px;">
+        
+        </div>
+         <div class="d1">
+        
+            
+        </div>
+        <div class="d1" style="margin:8px;">
+        
+        </div>
+        <div class="d1">
+        
+            
+        </div>
+    </div>
+    <div class="p2d"><p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ducimus nesciunt ea porro autem vero asperiores voluptatem vel nulla aut debitis mollitia ipsa magnam quam expedita dolores, sed eius sit blanditiis consectetur ipsam, cum iste nisi quae? Voluptas assumenda quo odio delectus modi ipsam aut recusandae vero sapiente earum obcaecati ullam iusto minima saepe reprehenderit cum ad necessitatibus corporis, fuga aspernatur. Sed aliquid alias omnis, quis molestiae aspernatur neque voluptatum nostrum fugit fuga quas inventore soluta beatae laboriosam assumenda nesciunt exercitationem voluptate praesentium consectetur repellat maxime, at, earum quod! Nam cumque ipsa nihil a maxime itaque maiores atque aut commodi ipsam. Fugit molestias, recusandae nihil id saepe sed sit exercitationem quidem veritatis voluptatem pariatur accusamus error incidunt aspernatur? Enim nihil totam commodi, fuga sed sit deserunt iure quidem deleniti voluptatibus vitae molestiae pariatur harum veritatis odit, assumenda est quibusdam corrupti nulla, eos voluptatem id aut beatae nam. Accusamus temporibus fugit perferendis distinctio vitae sit quae tempore minima! Consequuntur excepturi mollitia, veritatis placeat amet quis ad nihil illo cumque hic dolorem vero odio soluta provident, aut nemo aspernatur eaque? Nemo numquam ullam quia quam quaerat aliquid in ut dolorem illum, dignissimos ea? Odio error, natus deleniti quia adipisci aperiam autem tempora similique tenetur ipsa praesentium rerum rem distinctio minus maiores quasi atque quis ad et deserunt. Minima omnis at quo dolorem unde dicta, quod fugiat aliquid placeat! Deleniti quibusdam ut ad repellendus reiciendis, ipsam iste, harum dolore consequuntur sunt quo, aperiam veritatis voluptatibus ipsa nostrum eaque architecto at cum? Laboriosam doloremque maxime aspernatur facere, veniam eaque error culpa, necessitatibus ipsam porro libero dolore quisquam saepe eveniet! Maxime nesciunt animi magni quas distinctio error culpa asperiores, optio blanditiis labore dolorum ipsa voluptatem, omnis nam, voluptatum et in obcaecati? Magnam voluptas facere assumenda quisquam itaque, id unde consequatur blanditiis nemo omnis cum ipsa! Vero sequi minima dolor mollitia architecto temporibus porro, alias ducimus omnis impedit vitae dolorem, exercitationem dicta ab odit consectetur odio eveniet neque nobis expedita? Beatae cumque quas, harum, architecto consequuntur labore nam vero nisi molestias neque praesentium ut magnam deleniti nobis tempora vitae laudantium reprehenderit inventore. Voluptate accusantium id iure accusamus molestiae doloribus sunt saepe. Ea, numquam. Vitae placeat nesciunt quis mollitia ullam eveniet nobis minus. Sequi officia consequuntur delectus ipsum quisquam deleniti repellendus doloremque consectetur! Commodi officiis consequatur assumenda et magni nihil laudantium enim a voluptates qui. Praesentium, sunt commodi odio repellendus animi vel officiis doloremque sit quasi. Deleniti non amet cupiditate fuga commodi! Voluptas, assumenda dolor, unde minima distinctio aperiam pariatur omnis officiis aliquam voluptatibus reiciendis. Quis commodi iure beatae similique veniam, cum distinctio blanditiis ut hic et, quibusdam itaque enim fugiat. Veritatis enim, est dicta quia provident ut, distinctio nam, quasi odit eum explicabo ratione qui delectus? Iusto sint, maxime, repellendus placeat excepturi totam quos quod autem quas quisquam saepe unde minus, obcaecati possimus! Perspiciatis dolor sit quod, expedita accusamus sapiente sint quidem voluptatem cumque, consequuntur impedit quas tempora laudantium illum magni, eos laboriosam in ipsam? Quasi iusto fuga quaerat nam quo atque possimus mollitia cum alias?</p>
+    </div>
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+</html>

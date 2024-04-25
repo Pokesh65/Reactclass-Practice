@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="that">Pokesh Malli</h1>
+    <!-- <div class="divc"> 
+        
+    </div> -->
+    <br>
+    
+    <style>
+        .divc1{
+            border: 2px solid pink;
+            width: 80px;
+            height: 80px;
+            
+        }
+        .divc{
+                border-top-width: 0px;
+                border-left-width: 80px;
+                border-right-width: 80px;
+                border-bottom-width: 80px ;
+            border:10px solid rgb(0, 0, 0);
+            background-color: rgb(46, 46, 84);
+            /* transition-duration: 5s; */
+            border-radius: 50px;
+            transition:all 5s ; 
+            animation-name: divani;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes divani {
+            20%{
+                transform: translateX(200px);
+                width: 80px;
+                height: 80px;
+                border:1px dotted greenyellow;
+                
+
+                
+                background-color: chocolate;
+            }
+            40%{
+                background-color: aquamarine;
+                transform: translateX(800px);
+                
+
+            }
+            60%{
+                transform: rotate(180deg);
+                background-color: crimson;
+
+            }
+            100%{
+                transform: rotate(360deg);
+                background-color: cornflowerblue;
+            }
+            
+            
+
+            
+        }
+        /* .divc:hover{
+            transform: translate(500px,200px);
+            transform: rotate(180deg);
+
+
+        } */
+
+        .that{
+            font-size: clamp(40px, 4vw, 660px);
+            font-family:Arial, Helvetica, sans-serif;
+            background-image: url(./Blue_Purple_Abstract_Background_Video_Loop_Fluid_Pattern_Colorful_Motion_Grafic_Liquid_Texture.gif);
+            background-size: cover;
+            background-position: center;
+            color: transparent;
+            background-clip: text;
+            
+            margin: 450px;
+            transition-duration: 5s;
+            transition:5s all;
+
+        }
+        .that:hover{
+            /* font-size: 200px; */
+            transform: translate(500px,200px);
+            /* transform: rotate(180deg); */
+            
+        }
+    </style>
+</body>
+</html>

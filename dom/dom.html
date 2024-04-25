@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dn{
+            color: blue;
+            background-color: blanchedalmond;
+            border-radius: 40px;
+            border: 1px solid black ;
+            border-width: 1px;
+            width: 200px;
+
+        }
+        .dn1{
+            color: blueviolet;
+            font-size: xx-large;
+        }
+    </style>
+    
+</head>
+<body>
+    
+
+    <p id="p1"></p>
+    <p id="p2">Hello From Html</p>
+    <div id="d1"></div>
+    <div id="head"></div>
+    <abbr title="Naruto Image" t><img src="./1937530.jpg" width="450px" id="pic1"/></abbr>
+    <img src="./1937530.jpg" width="450px" id="pic1"/>
+    <input type="text" name="" id="inp1">
+    <button onclick="showEle()">Show</button>
+    <button onclick="hideEle()">Hide</button>
+    <!-- <input id="inp2" placeholder="Hi Enter Your Name" onchange="changetext(this)"/> -->
+    <input id="inp2" placeholder="Hi Enter Your Name"/>
+    <p id="p6"></p>
+    <p id="plh"></p>
+    <script>
+        document.getElementById("inp2").addEventListener("change",function(){
+            changetext(this)
+        })
+        function changetext(e){
+            console.log(e.value)
+            document.getElementById("p6").innerText=e.value
+            document.getElementById("inp2").value=""
+            document.getElementById("p6").style.color="brown"
+            document.getElementById("plh").innerText=e.placeholder
+        }
+        let picture1=document.getElementById("pic1")
+         let newPtag=document.createElement("p")
+        newPtag.innerText="Uzomaki Naruto"
+        newPtag.classList.add("dn","dn1")
+        document.getElementById("d1").appendChild(newPtag)
+
+        function showEle(){
+            newPtag.style.display="block"
+            p1.style.display="none"
+            picture1.style.display="block"
+            newPtag.classList.add("dn")
+            newPtag.classList.remove("dn1")
+
+        }
+        function hideEle(){
+            newPtag.style.display="none"
+            p1.style.display="block"
+            picture1.style.display="none"
+            
+
+        }
+        //DOM
+        document.getElementById("p1").innerHTML="<a href='https://www.google.com/search?q=google&oq=google&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTISCAEQLhhDGMcBGNEDGIAEGIoFMg4IAhBFGCcYOxiABBiKBTIMCAMQIxgnGIAEGIoFMgwIBBAAGEMYgAQYigUyDAgFEAAYQxiABBiKBTIMCAYQABhDGIAEGIoFMgwIBxAAGEMYgAQYigUyBwgIEAAYjwIyBwgJEAAYjwLSAQk1OTc1ajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8'>GO TO GOOGLE</a>"
+        let word=document.getElementById("p2").textContent
+        console.log(word)
+
+       
+
+        newPtag.classList.remove("dn")
+
+        document.getElementById("p1").style.backgroundColor="green"
+        let inp1=document.getElementById("inp1")
+        inp1.type="radio"
+
+        //Events and Event Listeners
+        
+        
+    </script>
+</body>
+</html>
